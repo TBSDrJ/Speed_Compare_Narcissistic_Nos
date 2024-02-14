@@ -20,11 +20,11 @@ def main():
             narcissism_sum += digs[j]**sz
         if i == narcissism_sum:
             print(i, end = " ", flush = True)
-            out_str += str(i) + " "
+            # out_str += str(i) + " "
             chars += sz + 1
         if chars > 70:
             print("", flush = True)
-            out_str += "\n"
+            # out_str += "\n"
             chars = 0
     print()
     # print(f"Secs to run: {time() - start:.4f}")

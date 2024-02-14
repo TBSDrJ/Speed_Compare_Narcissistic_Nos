@@ -18,44 +18,29 @@ In all of the tests, I am calculating time/memory using a Macbook Pro with an M1
 
 Each is run 3 times, I take the average of the three.  The time value reported here is only the 'user' value, excluding the 'system' time.  The 'RAM' value reported is the 'peak memory footprint.'  I'm using kB = 1000 bytes and mB = 1000000 bytes.
 
-I'm checking all of the integers less than 1000 for these tests.
-
 I'm compiling C and C++ code using the 2011 standard (`--std=c11` `--std=c++11`).  I am running with multiple optimization flags on compile, see the table for details.
 
 I wrote all the code last year without using `git` (shame), so I'll be uploading it all in one big dump.  For each test, I am calculating all of the narcissistic numbers up to 10,000,000.
 
 ## Results
 
+In order of speed:
+
 |Setup                 |Time     |RAM     |
 |:--------------------:|:-------:|:------:|
-|C, no flags           | sec| kB  |
-|C, -O1 flag           | sec| kB  |
-|C, -O2 flag           | sec| kB  |
-|C, -Ofast flag        | sec| kB  |
-|C++, no flags         | sec| kB  |
-|C++, -O1 flag         | sec| kB  |
-|C++, -O2 flag         | sec| kB  |
-|C++, -Ofast flag      | sec| kB  |
-|Pypy 3.10             | sec| mB|
-|Java                  | sec| mB|
-|C, int, no flags      | sec| kB  |
-|C, int, -O1 flag      | sec| kB  |
-|C, int, -O2 flag      | sec| kB  |
-|C, int, -Ofast flag   | sec| kB  |
-|C++, int, no flags    | sec| kB  |
-|C++, int, -O1 flag    | sec| kB  |
-|C++, int, -O2 flag    | sec| kB  |
-|C++, int, -Ofast flag | sec| kB  |
-|Fortran 90, no flags  | sec| mB|
-|Fortran 90, -O1 flag  | sec| mB|
-|Fortran 90, -O2 flag  | sec| mB|
-|Fortran 90,-Ofast flag| sec| mB|
-|F90, int, no flags    | sec| mB|
-|F90, subr, no flags   | sec| mB|
-|F90, subr, -Ofast flag| sec| mB|
-|JS in Firefox         | sec|?       |
-|JS in Chrome          | sec|?       |
-|JS in Safari          | sec|?       |
-|Python, with 3.9      | sec| mB|
-|Python, with 3.10     | sec| mB|
-|Python, with 3.11     | sec| mB|
+|C, -Ofast flag        |0.227 sec|935 kB  |
+|C++, -Ofast flag      |0.230 sec|951 kB  |
+|Fortran 90,-Ofast flag|0.327 sec|1.038 mB|
+|Fortran 90, no flags  |0.463 sec|1.033 mB|
+|C, no flags           |0.660 sec|940 kB  |
+|C++, no flags         |0.780 sec|951 kB  |
+|Pypy 3.10             |0.853 sec|2.356 mB|
+|JS in Safari          |0.969 sec|?       |
+|JS in Firefox         |1.117 sec|?       |
+|JS in Chrome          |4.272 sec|?       |
+|Python, with 3.11     |8.040 sec|5.741 mB|
+|Java                  |9.273 sec|5.673 mB|
+|Python, with 3.10     |21.38 sec|5.244 mB|
+|Python, with 3.9      |22.42 sec|4.228 mB|
+
++ I have a memory of Fortran being faster than C last year, I'm not sure what changed.
