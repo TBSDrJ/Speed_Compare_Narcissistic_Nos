@@ -1,10 +1,10 @@
 from array import array
-from time import time
+# from time import time
 
 def main():
-    start = time()
+    # start = time()
     digits = array('i', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-    start = time()
+    # start = time()
     chars = 0
     for i in range(10000000):
         n = i
@@ -24,7 +24,7 @@ def main():
                 print()
                 chars = 0
     print()
-    print("Secs to complete: ", time() - start)
+    # print("Secs to complete: ", time() - start)
 
 
 

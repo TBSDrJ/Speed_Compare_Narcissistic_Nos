@@ -32,9 +32,10 @@ In order of speed:
 |C++, -Ofast flag      |0.230 sec|951 kB  |
 |Fortran 90,-Ofast flag|0.327 sec|1.038 mB|
 |Fortran 90, no flags  |0.463 sec|1.033 mB|
+|Pypy 3.10 w/array     |0.567 sec|20.37 mB|
 |C, no flags           |0.660 sec|940 kB  |
 |C++, no flags         |0.780 sec|951 kB  |
-|Pypy 3.10             |0.853 sec|2.356 mB|
+|Pypy 3.10             |0.853 sec|23.56 mB|
 |JS in Safari          |0.969 sec|?       |
 |JS in Firefox         |1.117 sec|?       |
 |JS in Chrome          |4.272 sec|?       |
