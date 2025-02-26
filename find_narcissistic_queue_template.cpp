@@ -47,9 +47,9 @@ int main() {
             chars = 0;
         }
     }
-    fout.open("narcissistic_nos_queue_cpp.txt", ios::trunc | ios::out);
-    fout << out_str.str() << endl;
-    fout << "Secs to complete: " << static_cast<float> (clock() - start) / CLOCKS_PER_SEC << endl;
-    cout << "Secs to complete: " << static_cast<float> (clock() - start) / CLOCKS_PER_SEC << endl;
-    fout.close();
+    // fout.open("narcissistic_nos_queue_cpp.txt", ios::trunc | ios::out);
+    // fout << out_str.str() << endl;
+    // fout << "Secs to complete: " << static_cast<float> (clock() - start) / CLOCKS_PER_SEC << endl;
+    // cout << "Secs to complete: " << static_cast<float> (clock() - start) / CLOCKS_PER_SEC << endl;
+    // fout.close();
 }
