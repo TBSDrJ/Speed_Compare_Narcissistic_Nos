@@ -40,7 +40,7 @@ In order of speed:
 |C++, w/vectors, -Ofast|1.070 sec|1.26 mB |
 |JS in Firefox         |1.117 sec|?       |
 |C++, my queue, -Ofast |1.323 sec|1.06mB  |
-|Python 3.10 with C lib|2.060 sec|5.95 mB |
+|Python 3.11 with C lib|2.060 sec|5.95 mB |
 |JS in Chrome          |4.272 sec|?       |
 |Python, with 3.11     |8.040 sec|5.741 mB|
 |Java                  |9.273 sec|5.673 mB|
