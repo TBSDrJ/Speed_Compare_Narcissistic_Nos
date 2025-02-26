@@ -39,7 +39,8 @@ In order of speed:
 |JS in Safari          |0.969 sec|?       |
 |C++, w/vectors, -Ofast|1.070 sec|1.26 mB |
 |JS in Firefox         |1.117 sec|?       |
-|C++, my queue, -Ofast |1.323 sec|1.06mB  |
+|C++, my queue, -Ofast |1.323 sec|1.06 mB |
+|C++, list, -Ofast     |1.420 sec|1.05 mB |
 |Python 3.11 with C lib|2.060 sec|5.95 mB |
 |JS in Chrome          |4.272 sec|?       |
 |Python, with 3.11     |8.040 sec|5.741 mB|
@@ -48,4 +49,5 @@ In order of speed:
 |Python, with 3.9      |22.42 sec|4.228 mB|
 
 + I have a memory of Fortran being faster than C last year, I'm not sure what changed.
-+ The "Python 3.10 with C lib" uses find_narcissistic_array_library.c, which was compiled with -Ofast.
+
++ The "Python 3.11 with C lib" uses find_narcissistic_array_library.c, which was compiled with -Ofast.
