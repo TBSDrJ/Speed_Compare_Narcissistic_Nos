@@ -37,8 +37,10 @@ template <class T>
 T dequeue (Queue<T> * queue_ptr) {
     if (queue_ptr -> head != NULL) {
         T content = (queue_ptr -> head) -> content;
+        Entry<T>* tmp = queue_ptr -> head;
         (queue_ptr -> head) = (queue_ptr -> head) -> prev;
         (queue_ptr -> size)--;
+        delete tmp;
         return content;
     } else {
         return NULL;
